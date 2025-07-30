@@ -1,0 +1,27 @@
+
+body {
+  font-family: Georgia, serif;
+  background: #b4e0f8 url('https://themes.googleusercontent.com/image?id=1wLTWkU_6PD30roBJNfOzJkbDSVdh23FfYsvrDIfh8emJnpH0BAOKT4kTP4ytiOfdJE2g') repeat scroll top center;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #3367D6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0B8043;
+}
+nav a {
+  margin: 0 10px;
+}
+header {
+  background-color: #C6DAFC;
+  padding: 20px 0;
+}
+footer {
+  background-color: #C6DAFC;
+  padding: 10px 0;
+}

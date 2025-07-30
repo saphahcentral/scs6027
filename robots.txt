@@ -1,0 +1,8 @@
+# This file tells search engines and bots what they are allowed to see on your site.
+
+# This is the default rule, which allows search engines to crawl your site (recommended).
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
