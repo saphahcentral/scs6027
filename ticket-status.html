@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket Status - SCS6027</title>
+
+  <!-- Universal stylesheet -->
+  <link rel="stylesheet" href="https://saphahcentral.github.io/saphahcentral/style-public.css">
+
+  <!-- Page-specific JS -->
+  <script src="https://saphahcentral.github.io/scs6027/js/load-includes.js" defer></script>
+  <script src="https://saphahcentral.github.io/scs6027/js/ticket-status.js" defer></script>
+
+  <style>
+    /* Minimal page-specific styles */
+    main {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      max-width: 200px;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #25d366;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background-color: #1aa34a; }
+
+    #ticketResult {
+      margin-top: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Dynamic header -->
+<div id="header-placeholder"></div>
+
+<!-- Dynamic navigation -->
+<div id="nav-placeholder"></div>
+
+<main>
+  <h2>Check Ticket Status</h2>
+
+  <form id="status-form">
+    <label for="ticketId">Enter Ticket ID:</label>
+    <input type="text" id="ticketId" name="ticketId" placeholder="Ticket ID" required>
+    <button type="submit">Check Status</button>
+  </form>
+
+  <div id="ticketResult"></div>
+</main>
+
+<!-- Dynamic footer -->
+<div id="footer-placeholder"></div>
+
+</body>
+</html>

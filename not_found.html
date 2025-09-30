@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Not Found</title>
-  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <title>Page Not Found - 404</title>
+
+  <!-- Universal stylesheet -->
+  <link rel="stylesheet" href="https://saphahcentral.github.io/saphahcentral/style-public.css" />
+
+  <!-- Dynamic includes -->
+  <script src="https://saphahcentral.github.io/scs6027/js/load-includes.js" defer></script>
+
   <style>
+    /* Page-specific styles for 404 */
     .not-found {
       text-align: center;
-      margin-top: 60px;
+      margin: 60px auto;
       font-family: sans-serif;
+      max-width: 600px;
+      padding: 0 20px;
     }
     .not-found h1 {
       font-size: 2.5em;
@@ -17,25 +26,35 @@
     }
     .not-found p {
       font-size: 1.2em;
+      margin-top: 12px;
+    }
+    .not-found a {
+      text-decoration: underline;
+      color: #4285F4;
+    }
+    .not-found a:hover {
+      color: #1a73e8;
     }
   </style>
 </head>
 <body>
 
-<nav style="text-align: center; margin: 20px;">
-  <a href="index.html">Home</a> |
-  <a href="index2.html">Index</a> |
-  <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a> |
-  <a href="https://scs6027info.blogspot.com/p/disclosures.html" target="_blank">Disclosures</a> |
-  <a href="https://scs6027info.blogspot.com/p/stats.html" target="_blank">Promo Info</a>
-</nav>
+<!-- Dynamic header -->
+<div id="header-placeholder"></div>
 
-<div class="not-found">
-  <h1>404 – Page Not Found</h1>
-  <p>Oops! The page you’re looking for doesn’t exist or may have been moved.</p>
-  <p><a href="index.html" style="text-decoration: underline; color: blue;">Click here to return to the homepage</a></p>
-</div>
+<!-- Dynamic nav -->
+<div id="nav-placeholder"></div>
+
+<main>
+  <div class="not-found">
+    <h1>404 – Page Not Found</h1>
+    <p>Oops! The page you’re looking for doesn’t exist or may have been moved.</p>
+    <p><a href="index.html">Click here to return to the homepage</a></p>
+  </div>
+</main>
+
+<!-- Dynamic footer -->
+<div id="footer-placeholder"></div>
 
 </body>
 </html>

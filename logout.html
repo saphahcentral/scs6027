@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logout - SCS6027</title>
+
+  <!-- Universal stylesheet -->
+  <link rel="stylesheet" href="https://saphahcentral.github.io/saphahcentral/style-public.css">
+
+  <!-- JS for dynamic includes and auth -->
+  <script src="https://saphahcentral.github.io/scs6027/js/load-includes.js" defer></script>
+  <script src="https://saphahcentral.github.io/scs6027/js/auth.js" defer></script>
+
+  <style>
+    /* Minimal page-specific styles */
+    main {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #logoutMsg {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d9534f;
+      margin-top: 20px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Call logout function from auth.js
+      if (typeof logoutUser === 'function') {
+        logoutUser(); // assumes auth.js exposes logoutUser()
+      }
+
+      // Redirect after 3 seconds
+      setTimeout(() => {
+        window.location.href = 'login.html'; // redirect to login page
+      }, 3000);
+    });
+  </script>
+</head>
+<body>
+
+<!-- Dynamic header -->
+<div id="header-placeholder"></div>
+
+<!-- Dynamic nav -->
+<div id="nav-placeholder"></div>
+
+<main>
+  <h2>Logging Out...</h2>
+  <p id="logoutMsg">You have been successfully logged out. Redirecting to login page...</p>
+</main>
+
+<!-- Dynamic footer -->
+<div id="footer-placeholder"></div>
+
+</body>
+</html>
